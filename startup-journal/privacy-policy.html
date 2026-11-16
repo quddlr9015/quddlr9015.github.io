@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - 창업 일지</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1e293b; background: #f8fafc; padding: 20px; }
+    .container { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    h1 { font-size: 28px; margin-bottom: 8px; color: #0f172a; }
+    .subtitle { color: #64748b; font-size: 14px; margin-bottom: 28px; }
+    h2 { font-size: 20px; margin-top: 28px; margin-bottom: 12px; color: #0f172a; }
+    p, li { font-size: 15px; margin-bottom: 10px; }
+    ul { padding-left: 24px; }
+    .note { background: #f1f5f9; padding: 12px 16px; border-radius: 8px; margin: 16px 0; font-size: 14px; }
+    .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; color: #94a3b8; font-size: 13px; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>개인정보처리방침</h1>
+    <p class="subtitle">창업 일지 (Startup Journal) &mdash; 최종 수정일: 2026년 11월 16일</p>
+
+    <div class="note"><strong>요약</strong>: 창업 일지는 소유자 한 명만 쓰는 개인용 앱이에요. 소유자 본인의 기록만 저장하고, 판매하거나 광고에 쓰지 않아요. Google 캘린더는 바쁜 시간대만 읽고, 그 정보는 서버에 저장하지 않아요.<br><br><strong>Summary</strong>: A private, single-owner app. It stores only the owner's own records, never sells data or shows ads. From Google Calendar it reads busy time ranges only and does not store them on any server.</div>
+
+    <h2>1. 누가 쓰는 앱인가요</h2>
+    <p>창업 일지는 개발자 본인이 창업 탐색 기록용으로 만든 앱이에요. 처음 로그인한 계정 한 명만 쓸 수 있고, 다른 계정은 로그인해도 서버가 거절해요.</p>
+
+    <h2>2. 어떤 정보를 다루나요</h2>
+    <ul>
+      <li><strong>로그인 정보</strong>: Apple 또는 Google 로그인으로 받은 계정 식별자와 이메일. 소유자 본인인지 확인하는 데만 써요.</li>
+      <li><strong>소유자가 직접 쓴 기록</strong>: 할 일, 활동 시간, 인터뷰할 사람 명단과 대화 메모, 아이디어, 주간 회고, AI 비서와 주고받은 메시지.</li>
+      <li><strong>Google 캘린더 (소유자가 직접 연결한 경우만)</strong>: 앞으로 7일 동안의 바쁜 시간대(시작·끝 시각). 일정의 제목, 설명, 참석자, 장소는 받을 수 없는 권한(<code>https://www.googleapis.com/auth/calendar.freebusy</code>)만 요청해요.</li>
+    </ul>
+
+    <h2>3. 어디에 저장하나요</h2>
+    <ul>
+      <li>기록은 휴대폰과 Cloudflare(D1 데이터베이스)에 저장되고, 소유자의 맥과 동기화돼요.</li>
+      <li>Google 캘린더 접근 토큰은 소유자 맥의 키체인에만 저장되고, 서버로 보내지 않아요.</li>
+      <li>캘린더에서 읽은 바쁜 시간대는 맥의 메모리에서만 쓰고 저장하지 않아요. 언제 몇 건을 읽었는지만 맥의 접근 기록에 남겨요(내용은 남기지 않아요).</li>
+    </ul>
+
+    <h2>4. AI 처리</h2>
+    <p>AI 비서는 Anthropic의 Claude를 써요. 소유자의 맥에서 기록 요약과 메시지를 Claude에 보내 답과 제안을 받아요. 캘린더 연결 시에는 계산된 빈 시간(예: "11/18(수) 14:00–17:00")만 보내고, 캘린더 원본이나 토큰은 보내지 않아요. AI의 제안은 소유자가 휴대폰에서 확인한 뒤에만 저장돼요.</p>
+
+    <h2>5. Google 사용자 데이터에 관한 약속</h2>
+    <p>창업 일지가 Google API로 받은 정보를 사용하고 전송하는 방식은 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>의 제한적 사용(Limited Use) 요건을 포함해 이를 따릅니다.</p>
+    <p>Startup Journal's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <ul>
+      <li>Google 데이터는 위에 적은 기능(빈 시간 찾기)에만 써요.</li>
+      <li>판매하지 않고, 광고에 쓰지 않고, AI 모델 학습에 쓰지 않아요.</li>
+      <li>사람이 Google 데이터를 직접 읽지 않아요.</li>
+    </ul>
+
+    <h2>6. 제3자 제공</h2>
+    <p>기록을 판매하거나 광고에 쓰지 않아요. 앱을 운영하기 위해 다음 서비스를 써요: Cloudflare(저장·동기화), Anthropic(AI 처리), Apple·Google(로그인과 캘린더 연결). 이 서비스들의 서버는 대한민국 밖(미국 등)에 있을 수 있어요.</p>
+
+    <h2>7. 연결 끊기와 삭제</h2>
+    <ul>
+      <li>Google 캘린더 연결은 언제든 끊을 수 있어요. 앱의 연결 해제 명령을 쓰거나 <a href="https://myaccount.google.com/permissions">Google 계정의 서드파티 연결 관리</a>에서 권한을 취소하면 돼요. 끊으면 맥 키체인의 토큰도 지워요.</li>
+      <li>기록 삭제를 원하면 아래 연락처로 알려 주세요.</li>
+    </ul>
+
+    <h2>8. 변경</h2>
+    <p>이 방침이 바뀌면 이 페이지의 최종 수정일을 고쳐요.</p>
+
+    <div class="footer">
+      <p>문의: <a href="mailto:quddlr9015@gmail.com">quddlr9015@gmail.com</a> · <a href="index.html">창업 일지 소개</a></p>
+    </div>
+  </div>
+</body>
+</html>
