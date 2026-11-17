@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>개인정보처리방침 - 창업 일지</title>
+  <title>개인정보처리방침 - TARS</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1e293b; background: #f8fafc; padding: 20px; }
@@ -21,17 +21,19 @@
 <body>
   <div class="container">
     <h1>개인정보처리방침</h1>
-    <p class="subtitle">창업 일지 (Startup Journal) &mdash; 최종 수정일: 2026년 11월 16일(연동 범위 갱신)</p>
+    <p class="subtitle">TARS (옛 이름: 창업 일지 / Startup Journal) &mdash; 최종 수정일: 2026년 11월 17일(앱 이름, 녹음·음성 입력)</p>
 
-    <div class="note"><strong>요약</strong>: 창업 일지는 소유자 한 명만 쓰는 개인용 앱이에요. 소유자 본인의 기록만 저장하고, 판매하거나 광고에 쓰지 않아요. 소유자가 연결한 경우 Google 캘린더의 일정 제목·시간, Gmail의 보낸 사람·제목·시각, 휴대폰 캘린더의 일정 제목·시간을 읽어요. 메일 본문은 읽지 않고, 메일을 보내지 않아요.<br><br><strong>Summary</strong>: A private, single-owner app. It stores only the owner's own records and never sells data or shows ads. When the owner connects them, it reads event titles and times from Google Calendar, the sender, subject and time of Gmail messages, and event titles and times from the phone's own calendars. It never reads mail bodies and never sends mail.</div>
+    <div class="note"><strong>요약</strong>: TARS는 소유자 한 명만 쓰는 개인용 비서 앱이에요. 소유자 본인의 기록만 저장하고, 판매하거나 광고에 쓰지 않아요. 소유자가 연결한 경우 Google 캘린더의 일정 제목·시간, Gmail의 보낸 사람·제목·시각, 휴대폰 캘린더의 일정 제목·시간을 읽어요. 메일 본문은 읽지 않고, 메일을 보내지 않아요.<br><br><strong>Summary</strong>: A private, single-owner app. It stores only the owner's own records and never sells data or shows ads. When the owner connects them, it reads event titles and times from Google Calendar, the sender, subject and time of Gmail messages, and event titles and times from the phone's own calendars. It never reads mail bodies and never sends mail.</div>
 
     <h2>1. 누가 쓰는 앱인가요</h2>
-    <p>창업 일지는 개발자 본인이 창업 탐색 기록용으로 만든 앱이에요. 처음 로그인한 계정 한 명만 쓸 수 있고, 다른 계정은 로그인해도 서버가 거절해요.</p>
+    <p>TARS는 개발자 본인이 자기 일상을 챙기려고 만든 개인 비서 앱이에요. 처음 로그인한 계정 한 명만 쓸 수 있고, 다른 계정은 로그인해도 서버가 거절해요.</p>
 
     <h2>2. 어떤 정보를 다루나요</h2>
     <ul>
       <li><strong>로그인 정보</strong>: Apple 또는 Google 로그인으로 받은 계정 식별자와 이메일. 소유자 본인인지 확인하는 데만 써요.</li>
-      <li><strong>소유자가 직접 쓴 기록</strong>: 할 일, 활동 시간, 인터뷰할 사람 명단과 대화 메모, 아이디어, 주간 회고, AI 비서와 주고받은 메시지.</li>
+      <li><strong>소유자가 직접 쓴 기록</strong>: 할 일, 활동 시간, 연락처와 대화 메모, 메모, 주간 회고, 소유자가 적은 자기 소개와 지금 집중하는 일, AI 비서와 주고받은 메시지.</li>
+      <li><strong>녹음 (소유자가 녹음을 시작한 경우만)</strong>: 녹음 파일은 서버(Cloudflare R2)에 잠시 올렸다가 소유자의 맥이 내려받아 맥 안에서 글로 바꾼 뒤 바로 지워요. 서버에 남은 파일도 7일이 지나면 자동으로 지워요. 받아쓴 글은 맥에 7일 동안만 두고, 정리된 결과(요약과 할 일 등)만 기록에 남아요. 다른 사람과 대화를 녹음할 때는 소유자가 먼저 알리도록 앱에서 안내해요.</li>
+      <li><strong>음성 입력</strong>: 말하기 기능은 휴대폰에 들어 있는 음성 인식(안드로이드 기본 음성 인식, 현재 Google)을 써요. 휴대폰 설정에 따라 음성이 그 음성 인식 제공자에게 전달될 수 있어요. 앱은 받아쓴 글만 메시지로 저장하고 음성은 저장하지 않아요.</li>
       <li><strong>Google 캘린더 (소유자가 직접 연결한 경우만)</strong>: 바쁜 시간대(<code>calendar.freebusy</code>)와 앞으로 2주 일정의 제목·시작·끝 시각(<code>calendar.events</code>). 일정의 설명, 장소, 참석자 주소는 요청하지 않아요. 소유자가 앱에서 누른 경우에만 일정을 하나 만들고(초대는 보내지 않아요), 앱이 만들지 않은 일정은 고치거나 지우지 않아요.</li>
       <li><strong>Gmail (소유자가 직접 연결한 경우만)</strong>: 받은편지함 최근 메일의 보낸 사람, 제목, 받은 시각, 라벨(<code>gmail.metadata</code>, 본문은 받을 수 없는 권한). 소유자가 앱에서 누른 경우에만 Gmail 임시보관함에 초안을 하나 만들어요(<code>gmail.compose</code>). 메일을 보내거나 지우지 않아요.</li>
       <li><strong>휴대폰 캘린더 (소유자가 직접 허용한 경우만)</strong>: Google 계정이 아닌 폰 캘린더(삼성 캘린더 등)의 앞으로 2주 일정 제목·시간. 안드로이드 캘린더 읽기 권한만 쓰고, 폰 캘린더에 쓰지 않아요.</li>
@@ -42,7 +44,7 @@
       <li>기록은 휴대폰과 Cloudflare(D1 데이터베이스)에 저장되고, 소유자의 맥과 동기화돼요.</li>
       <li>Google 접근 토큰은 소유자 맥의 키체인에만 저장되고, 서버로 보내지 않아요.</li>
       <li>휴대폰에 보여 주기 위해 앞으로 2주 일정의 제목·시간만 서버(Cloudflare)에 두고, 읽을 때마다 덮어써요. 지난 일정은 쌓아 두지 않아요.</li>
-      <li>명단 사람에게서 온 메일은 "메일이 왔어요" 알림 한 건(보낸 사람 이름과 제목)으로 기록에 남아요. 그 밖의 메일 정보는 맥의 메모리에서만 쓰고 저장하지 않아요.</li>
+      <li>연락처에 있는 사람에게서 온 메일은 "메일이 왔어요" 알림 한 건(보낸 사람 이름과 제목)으로 기록에 남아요. 그 밖의 메일 정보는 맥의 메모리에서만 쓰고 저장하지 않아요.</li>
       <li>언제, 어떤 서비스에서, 무슨 목적으로, 몇 건을 읽거나 만들었는지 맥의 접근 기록에 남겨요(내용은 남기지 않아요).</li>
     </ul>
 
@@ -50,7 +52,7 @@
     <p>AI 비서는 Anthropic의 Claude를 써요. 소유자의 맥에서 기록 요약과 메시지를 Claude에 보내 답과 제안을 받아요. 캘린더를 연결하면 계산된 빈 시간과 앞으로 7일 일정의 제목·시간을 보내요. Gmail을 연결하면 아침 브리핑을 만들 때 지난 24시간 기본 탭 메일의 보낸 사람 이름·도메인과 제목만 보내요. 메일 주소, 본문, 인증번호·로그인 메일, 광고·소셜 메일은 보내지 않아요. 토큰은 보내지 않아요. 일정 만들기와 초안 저장은 소유자가 휴대폰에서 누른 경우에만 해요.</p>
 
     <h2>5. Google 사용자 데이터에 관한 약속</h2>
-    <p>창업 일지가 Google API로 받은 정보를 사용하고 전송하는 방식은 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>의 제한적 사용(Limited Use) 요건을 포함해 이를 따릅니다.</p>
+    <p>TARS가 Google API로 받은 정보를 사용하고 전송하는 방식은 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>의 제한적 사용(Limited Use) 요건을 포함해 이를 따릅니다.</p>
     <p>Startup Journal's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
     <ul>
       <li>Google 데이터는 위에 적은 기능(하루 계획과 빈 시간 찾기, 일정 만들기, 답장 알림, 아침 브리핑, 초안 저장)에만 써요.</li>
@@ -72,7 +74,7 @@
     <p>이 방침이 바뀌면 이 페이지의 최종 수정일을 고쳐요.</p>
 
     <div class="footer">
-      <p>문의: <a href="mailto:quddlr9015@gmail.com">quddlr9015@gmail.com</a> · <a href="index.html">창업 일지 소개</a></p>
+      <p>문의: <a href="mailto:quddlr9015@gmail.com">quddlr9015@gmail.com</a> · <a href="index.html">TARS 소개</a></p>
     </div>
   </div>
 </body>
