@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-09-25T07:26:30.409Z",
+  "updatedAt": "2026-11-25T17:57:20.266Z",
   "periods": [
+    {
+      "period": "2026-09-10",
+      "drawDate": "2026-11-25",
+      "claimStart": "2026-12-06",
+      "claimEnd": "2027-03-05",
+      "specialPrize": "97606522",
+      "grandPrize": "76160702",
+      "firstPrizes": [
+        "02096005",
+        "28745017",
+        "76740352"
+      ],
+      "additionSixth": []
+    },
     {
       "period": "2026-07-08",
       "drawDate": "2026-09-25",
@@ -152,20 +166,6 @@
         "26649927",
         "59565539",
         "11460822"
-      ],
-      "additionSixth": []
-    },
-    {
-      "period": "2024-09-10",
-      "drawDate": "2024-11-25",
-      "claimStart": "2024-12-06",
-      "claimEnd": "2025-03-05",
-      "specialPrize": "28630525",
-      "grandPrize": "90028580",
-      "firstPrizes": [
-        "27435934",
-        "39666605",
-        "02550031"
       ],
       "additionSixth": []
     }
